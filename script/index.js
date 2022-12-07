@@ -5,4 +5,3 @@
 
 "You selected <!-- Add rating here --> out of 5"
 
-const frm = querySelecto('.Number')
