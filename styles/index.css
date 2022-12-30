@@ -81,10 +81,15 @@ li{
     
 }
 
+li :focus{
+    background-color: hsl(217, 12%, 63%);
+}
+
 li :hover{
     background-color: orange;
     color: var(--White);
 }
+
 
 .number{
     background-color: hsl(213, 20%, 23%);
