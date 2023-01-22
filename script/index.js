@@ -1,17 +1,27 @@
 const main = document.querySelector('main')
-const update = document.querySelector("h1")
-const update2 = document.querySelector("p")
+const submit = document.querySelector('.btn-submit')
+const numSelecionado = document.getElementById("numSelecionado")
+const btSelect = document.querySelectorAll(".number")
 
-main.addEventListener('submit', (e) => {
-    update.innerText = 'Thank you!'
-    update2.innerText = 'We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!'
-    console.log(update)
+let contNum = 0
+
+btSelect.forEach((numSelectd) => {
+    numSelectd.addEventListener('click', () =>{
+        numSelecionado.innerHTML = numSelectd.innerHTML
+    })
 })
 
-'Thank you!'
 
-'We appreciate you taking the time to give a rating. If you ever need more support,'
-'don’t hesitate to get in touch!'
-
-"You selected <!-- Add rating here --> out of 5"
-
+submit.addEventListener('click', () => {
+    main.innerHTML = `<section class="secundary">
+    <picture>
+      <img src="/images/illustration-thank-you.svg" alt="">
+    </picture>
+    <div class="text">  
+      <p class="selected">You selected
+      <span id="numSelecionado"></span> out of 5</p>
+      <h2>Thank you!</h2>
+      <p>We appreciate you taking the time to give a rating. if you ever need more support, don't hesitate to get in touch</p>
+    </div>
+  </section>`
+})
