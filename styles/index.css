@@ -110,7 +110,7 @@ li :hover{
 
 .btn{
     letter-spacing: 2px;
-    background-color: orange;
+    background-color:#fc5614;
     margin: 2rem ;
     border-radius: 1.3rem;
     padding: .6rem 0;
@@ -156,7 +156,7 @@ picture{
 }
 
 .numSelectd{
-    background-color: orange;
+    background-color: #fc7614;
 }
 .btn-submit-again{
     margin: 0 18px 20px;
