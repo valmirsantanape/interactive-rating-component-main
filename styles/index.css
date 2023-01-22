@@ -36,7 +36,7 @@ main{
     font-family: 'Overpass', sans-serif;
     display: grid;
     background-color: var(--Dark-Blue);
-    max-width: 310px;
+    max-width: 350px;
     border-radius: 1rem;
     margin-bottom: 2px;
 }
@@ -70,9 +70,9 @@ p{
 }
 .numbers{
     display: flex;
-    align-items: center;
-    padding: 0 2rem;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding: 0 1rem;
+    
     cursor: pointer;
 }
 li{
@@ -125,7 +125,7 @@ li :hover{
     flex-direction: column;
     align-items: center;
     background-color: var(--Dark-Blue);
-    max-width: 310px;
+    max-width: 350px;
     border-radius: 1rem;
     
 }
@@ -145,8 +145,8 @@ picture{
     color: var(--Orange);
     border-radius: 1rem;
     background-color: hsl(213, 20%, 23%);
-    margin: 10px  auto ;
-    width: fit-content;
+    margin: 30px  auto 0px ;
+    max-width: fit-content;
     padding: 10px 10px 5px 10px;
     
 }
