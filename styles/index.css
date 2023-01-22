@@ -87,7 +87,7 @@ li :focus{
 }
 
 li :hover{
-    background-color: orange;
+    background-color: #fc5614;
     color: var(--White);
 }
 
