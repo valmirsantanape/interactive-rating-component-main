@@ -1,7 +1,9 @@
 const main = document.querySelector('main')
+const sectionSecundary = document.querySelector('.secundary')
 const submit = document.querySelector('.btn-submit')
 const numSelecionado = document.getElementById("numSelecionado")
 const btSelect = document.querySelectorAll(".number")
+const restart = document.querySelector(".btn-submit-again")
 
 let contNum = 0
 
@@ -13,15 +15,10 @@ btSelect.forEach((numSelectd) => {
 
 
 submit.addEventListener('click', () => {
-    main.innerHTML = `<section class="secundary">
-    <picture>
-      <img src="/images/illustration-thank-you.svg" alt="">
-    </picture>
-    <div class="text">  
-      <p class="selected">You selected
-      <span id="numSelecionado"></span> out of 5</p>
-      <h2>Thank you!</h2>
-      <p>We appreciate you taking the time to give a rating. if you ever need more support, don't hesitate to get in touch</p>
-    </div>
-  </section>`
+    sectionSecundary.classList.remove("esconder")
+    main.classList.add('esconder')
+})
+
+restart.addEventListener('click', () => {
+    location.reload()
 })
